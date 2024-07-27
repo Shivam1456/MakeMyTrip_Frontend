@@ -28,12 +28,12 @@ import 'react-toastify/dist/ReactToastify.css';
 Modal.setAppElement('#root'); // Set the root element for accessibility
 
 const PrivateRoute = ({ element }) => {
-    const token = localStorage.getItem('token'); // Check if token is present
+    const token = localStorage.getItem('token'); 
 
     if (!token) {
         if (!toast.isActive('login-toast')) {
             toast.info('Please log in to access this page.', {
-                toastId: 'login-toast', // Unique ID to ensure only one notification
+                toastId: 'login-toast', 
                 style: {
                     backgroundColor: '#fff',
                     color: '#ff4d4d'
